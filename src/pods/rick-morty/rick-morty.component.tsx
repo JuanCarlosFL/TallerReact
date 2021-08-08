@@ -1,7 +1,5 @@
-import { Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
-import { RickMortySearch } from './components/rick-morty-search';
 import { RickMortyCard } from './components/rick-morty.card';
 import { CharacterVM } from './vm';
 
@@ -26,7 +24,6 @@ const useStyles = makeStyles({
 export const RickMortyComponent: React.FC<Props> = props => {
     const {characters} = props;
     const classes = useStyles();
-    console.log(characters);
 
     return (
         <>

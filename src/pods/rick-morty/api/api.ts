@@ -13,7 +13,5 @@ export const getCharacter = async (id: number): Promise<Character> => {
     const character = await fetch(`${urlGetAll}/${id}`)
         .then(response => response.json());
 
-    console.log(character);
-
     return character;
 } 
