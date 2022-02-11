@@ -3,7 +3,11 @@ import { Character } from "./vm.api";
 const urlGetAll = `https://rickandmortyapi.com/api/character`;
 
 export const getAll = async () => {
-    const characters = await fetch(urlGetAll)
+    const characters = await fetch(urlGetAll, {
+        method: 'GET',
+        mode: 'cors',
+        cache: 'default'
+    })
         .then(response => response.json())
 
     return characters.results;

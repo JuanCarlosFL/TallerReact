@@ -54,7 +54,7 @@ export const MenuComponent: React.FC = () => {
                     
                 </Link>
                 <Link
-                    to="/ejercicio-basico"
+                    to="/image-list"
                     className={classes.items}
                 >
                     <ImageIcon className={classes.icon}  />
